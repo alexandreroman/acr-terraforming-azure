@@ -23,6 +23,7 @@ resource "azurerm_container_registry" "acr" {
   resource_group_name = data.azurerm_resource_group.acr.name
   location            = data.azurerm_resource_group.acr.location
   sku                 = var.az_acr_sku
+  tags                = var.az_tags
 
   # Admin access is enabled so you can easily use "docker pull" or "docker push".
   admin_enabled = true

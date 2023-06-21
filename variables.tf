@@ -3,6 +3,12 @@ variable "az_res_group" {
   description = "Azure resource group"
 }
 
+variable "az_tags" {
+  type        = map(string)
+  default     = {}
+  description = "Tags to attach to Azure resources"
+}
+
 variable "az_acr_name" {
   type        = string
   description = "ACR name"
