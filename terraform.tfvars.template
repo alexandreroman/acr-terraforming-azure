@@ -1,0 +1,3 @@
+az_res_group = "myacr"
+az_acr_name  = "myacr"
+az_acr_sku   = "Standard"
